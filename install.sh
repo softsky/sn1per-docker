@@ -77,5 +77,9 @@ ln -s $INSTALL_DIR/Findsploit/compilesploit /usr/bin/compilesploit
 ln -s $INSTALL_DIR/MassBleed/massbleed /usr/bin/massbleed
 ln -s $INSTALL_DIR/BruteX/brutex /usr/bin/brutex
 ln -s $INSTALL_DIR/testssl.sh/testssl.sh /usr/bin/testssl
+
+cd $INSTALL_DIR/Findsploit/ && sh install.sh
+cd $INSTALL_DIR/BruteX/ && sh install.sh
+
 echo -e "$OKORANGE + -- --=[Done!$RESET"
 echo -e "$OKORANGE + -- --=[To run, type 'sniper'! $RESET"

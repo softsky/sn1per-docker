@@ -94,12 +94,13 @@ RUN mv /usr/bin/python /usr/bin/python.unknown && \
 
 # INSTALL SN1P3R
 RUN cd /root && \
-	git clone https://github.com/1N3/Sn1per.git && \
+	git clone https://github.com/softsky/Sn1per.git && \
 	cd ~/Sn1per && \
 	rm install.sh && \
 	mv ~/install.sh ./install.sh; sync && \
 	chmod +x install.sh && \
 	./install.sh
 
+ENV DISABLE_POSTGRESQL true
 # Always start container into a bash shell
 CMD /bin/bash
