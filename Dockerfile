@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER menzo@menzo.io
+MAINTAINER Arsen A.Gutsal <a.gutsal@softsky.com.ua>
 
 
 RUN echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list.d/kali.sources.list
